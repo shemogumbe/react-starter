@@ -13,6 +13,8 @@ app.get('/', (request, response) => {
 });
 
 const port = 8080;
+app.use(express.static('dist'));
+
 app.listen(port, () => {
     console.log("Server running at port " +port);
 })
